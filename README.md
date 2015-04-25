@@ -30,20 +30,3 @@ export HUBOT_AIRBRAKE_SUBDOMAIN=YOUR_SUBDOMAIN_HEARE
 Configure your Airbrake webhook integration:
 
 Url: ``<hubot host>:<hubot port>/<hubot name>/airbrake/<room>``
-
-
-## Notification examples
-
-If you use slack adapter then your notice use Slack attachments.
-
-### Slack Adapter
-
-![](https://raw.githubusercontent.com/wiki/1syo/hubot-airbrake-notifier/slack.png)
-
-### Slack Adapter (fallback)
-
-![](https://raw.githubusercontent.com/wiki/1syo/hubot-airbrake-notifier/slack-fallback.png)
-
-### Shell Adapter
-
-![](https://raw.githubusercontent.com/wiki/1syo/hubot-airbrake-notifier/shell.png)

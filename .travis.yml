@@ -12,4 +12,4 @@ after_success:
 notifications:
   email: false
   webhooks:
-    secure: "amlDZWCsnzzGdsSswxZ80Pm2tc0rsTDkl7R0L4sEHph7+UajUzSOR8emdFF5mbSNH7zPwZhEOFPdgtEnw+sUBFF+0PIntL+iPvmIYdHdbtIX0e2tVOW1i3Tslacq0hbn7/YLdCTwNkYbnGi/mIEzDWsjgD3S1FQN1rEte9GxX1A="
+    secure: "ZfEEngJzkdOMhbEW+cA304fn2f28TD6FVhrskHIrYIgv3rL+5q5VmzAlhY4/hd9zfnVO/EwSZLONOHwJQsAqqolSv4IOiajkEuV473uim/7mnF6EJ6FILAr+FJnKjs/SdzgbjG6D098o8s6Ktsdk/l1qkune7QHCJkrt+6P73Ss="

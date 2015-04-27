@@ -18,12 +18,15 @@
 #
 # Author:
 #   TAKAHASHI Kazunari[takahashi@1syo.net]
-Postman = require "./postman"
+#
+Airbrake = require "./airbrake"
+Message = require "./message"
 module.exports = (robot) ->
   robot.router.post "/#{robot.name}/airbrake/:room", (req, res) ->
     try
-      postman = new Postman(req, robot)
-      postman.notify()
+      message = new Message(new Airbrake(req.body))
+      robot.send { room: req.params.room }, message.build()
+
       res.end "[Airbrake] Sending message"
     catch e
       res.end "[Airbrake] #{e}"

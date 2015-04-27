@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - '0.10'
+  - '0.12'
+before_script:
+  - npm install -g grunt-cli
+script:
+  - grunt test
+  - grunt coffeelint
+after_success:
+  - grunt coveralls
+notifications:
+  email: false
+  webhooks:
+    secure: "ZfEEngJzkdOMhbEW+cA304fn2f28TD6FVhrskHIrYIgv3rL+5q5VmzAlhY4/hd9zfnVO/EwSZLONOHwJQsAqqolSv4IOiajkEuV473uim/7mnF6EJ6FILAr+FJnKjs/SdzgbjG6D098o8s6Ktsdk/l1qkune7QHCJkrt+6P73Ss="

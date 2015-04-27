@@ -4,8 +4,8 @@ chai = require 'chai'
 expect = chai.expect
 request = require 'supertest'
 
-valid_json = require './fixture/valid.json'
-invalid_json = require './fixture/invalid.json'
+valid_json = require './fixtures/valid.json'
+invalid_json = require './fixtures/invalid.json'
 
 describe 'airbrake-notifier', ->
   robot = null

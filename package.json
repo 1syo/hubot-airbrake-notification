@@ -18,7 +18,7 @@
 
   "dependencies": {
     "coffee-script": ">= 1.6",
-    "underscore": "*"
+    "mustache": "*"
   },
 
   "devDependencies": {

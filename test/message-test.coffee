@@ -27,5 +27,5 @@ describe 'Message', ->
       @message = new Message(new Airbrake(json))
 
     it '#build', ->
-      message = 'New exception for Airbrake (production): RuntimeError (https://.airbrake.io/projects/1055/groups/37463546)'
+      message = 'New exception for Airbrake (production): RuntimeError (https://.airbrake.io/projects/1055/groups/37463546/notices/4505303522)'
       expect(@message.build()).to.eq message

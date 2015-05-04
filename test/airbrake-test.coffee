@@ -42,7 +42,10 @@ describe 'Airbrake', ->
       '[PROJECT_ROOT]/app/middleware/conditional_heroku_nav.rb:11:in \'call_without_newrelic\''
     ]
 
+  it '#notice_id', ->
+    expect(@airbrake.notice_id()).to.eq 4505303522
+
   it '#url', ->
     expect(@airbrake.url()).to.eq """
-      https://test.airbrake.io/projects/1055/groups/37463546
+      https://test.airbrake.io/projects/1055/groups/37463546/notices/4505303522
     """

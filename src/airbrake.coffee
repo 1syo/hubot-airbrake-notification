@@ -28,7 +28,10 @@ class Airbrake
   backtraces: ->
     @json.error.last_notice.backtrace.slice(0, 3)
 
+  notice_id: ->
+    @json.error.last_notice.id
+
   url: ->
-    "https://#{process.env.HUBOT_AIRBRAKE_SUBDOMAIN}.airbrake.io/projects/#{@project_id()}/groups/#{@error_id()}"
+    "https://#{process.env.HUBOT_AIRBRAKE_SUBDOMAIN}.airbrake.io/projects/#{@project_id()}/groups/#{@error_id()}/notices/#{@notice_id()}"
 
 module.exports = Airbrake

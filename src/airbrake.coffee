@@ -25,9 +25,6 @@ class Airbrake
   project_id: ->
     @json.error.project.id
 
-  backtraces: ->
-    @json.error.last_notice.backtrace.slice(0, 3)
-
   notice_id: ->
     @json.error.last_notice.id
 

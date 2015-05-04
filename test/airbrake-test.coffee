@@ -35,13 +35,6 @@ describe 'Airbrake', ->
   it '#project_id', ->
     expect(@airbrake.project_id()).to.eq 1055
 
-  it '#backtraces', ->
-    expect(@airbrake.backtraces()).to.eql [
-      '[PROJECT_ROOT]/app/controllers/pages_controller.rb:35:in \'exception_tester\'',
-      '[PROJECT_ROOT]/app/middleware/conditional_heroku_nav.rb:19:in \'_call\'',
-      '[PROJECT_ROOT]/app/middleware/conditional_heroku_nav.rb:11:in \'call_without_newrelic\''
-    ]
-
   it '#notice_id', ->
     expect(@airbrake.notice_id()).to.eq 4505303522
 
